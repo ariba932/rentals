@@ -1,0 +1,15 @@
+<h3>New Car Order</h3>
+
+<p>Transaction {{ doc.name }} has been orddered. Please take necessary action.</p>
+
+<!-- show last comment -->
+{% if comments %}
+Last comment: {{ comments[-1].comment }} by {{ comments[-1].by }}
+{% endif %}
+
+<h4>Details</h4>
+
+<ul>
+<li>Customer: {{ doc.customer }}</li>
+<li>vehicle: {{ doc.vehicle }}</li>
+</ul>

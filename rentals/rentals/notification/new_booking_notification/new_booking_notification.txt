@@ -1,0 +1,13 @@
+*New Order*
+
+New booking {{ doc.name }} has been made. Please take necessary action.
+
+
+{% if comments %}
+Last comment: {{ comments[-1].comment }} by {{ comments[-1].by }}
+{% endif %}
+
+*Details*
+
+• Customer: {{ doc.customer_name }}
+• Car type: {{ doc.vehicle }}

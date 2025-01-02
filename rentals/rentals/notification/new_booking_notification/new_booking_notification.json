@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2024-12-20 13:14:25.744232",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Order",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>New Car Order</h3>\r\n\r\n<p>Transaction {{ doc.name }} has been orddered. Please take necessary action.</p>\r\n\r\n<!-- show last comment -->\r\n{% if comments %}\r\nLast comment: {{ comments[-1].comment }} by {{ comments[-1].by }}\r\n{% endif %}\r\n\r\n<h4>Details</h4>\r\n\r\n<ul>\r\n<li>Customer: {{ doc.customer }}</li>\r\n<li>vehicle: {{ doc.vehicle }}</li>\r\n</ul>",
+ "message_type": "HTML",
+ "minutes_offset": 0,
+ "modified": "2024-12-20 14:07:53.652308",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "New Booking Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Administrator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.customer_name}} Make a New Order"
+}

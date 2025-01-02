@@ -1,0 +1,23 @@
+
+<div class="container mt-5">
+	<div class="row">
+		<a href="/{{ doc.route |e }}">
+			<!-- {{ (doc.title or doc.name) |e }} -->
+			<div class="col-md-4 car-card">
+				<div class="card">
+				{% if doc.vehicle_image %}
+					<img src="{{doc.vehicle_image}}" class="card-img-top car-image" alt="Car 3">
+				{% else %}
+					<img src="https://imgd.aeplcdn.com/272x153/n/cw/ec/137875/i7-exterior-right-front-three-quarter-8.jpeg?isig=0&q=80" class="card-img-top car-image" alt="Car 3">
+				{% endif %}
+				<div class="card-body">
+					<h5 class="card-title">{{doc.vehicle_info}}</h5>
+					<p class="card-text">Registration No: {{doc.registration_number}}</p>
+					<p class="card-text">{{doc.vehicle_color}}</p>
+				</div>
+				</div>
+			</div>
+		</a>
+	</div>	
+</div>
+<!-- this is a sample default list template -->
